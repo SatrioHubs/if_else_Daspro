@@ -15,7 +15,25 @@ public class PemilihanPercobaan2_26 {
         float tugas = input26.nextFloat();
 
         float total = (uas * 0.4f) + (uts * 0.3f) + (kuiz * 0.1f) + (tugas * 0.2f);
-        String message = total < 65 ? "Remidi" : "Tidak Remedi";
-        System.out.println("Nilai Akhir = " + total + " Sehingga " + message);
+        // String message = total < 65 ? "Remidi" : "Tidak Remedi";
+        // System.out.println("Nilai Akhir = " + total + " Sehingga " + message);
+
+        if (total > 80.0) {
+            System.out.println("Total Nilai Anda : "+ total + " dan nilai anda adalah : A");
+        }else if (total > 73.0){
+            System.out.println("Total Nilai Anda : "+ total + " dan nilai anda adalah : B+");
+        }else if (total > 65.0){
+            System.out.println("Total Nilai Anda : "+ total + " dan nilai anda adalah : B");
+        }else if (total > 60.0){
+            System.out.println("Total Nilai Anda : "+ total + " dan nilai anda adalah : C+");
+        }else if (total > 50.0){
+            System.out.println("Total Nilai Anda : "+ total + " dan nilai anda adalah : C");
+        }else if (total > 39.0){
+            System.out.println("Total Nilai Anda : "+ total + " dan nilai anda adalah : D");
+        }else if (total <= 39.0){
+            System.out.println("Total Nilai Anda : "+ total + " dan nilai anda adalah : E");
+        }else{
+            System.out.println("Error");
+        }
     }
 }
